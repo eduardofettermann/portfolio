@@ -1,0 +1,42 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.skills__technologies__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+}
+
+.skills__technologies__list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+}
+
+/* TASK -> Hover - descricao tecnologia */
+
+
+
+/* Estilos para tablet (tamanho máximo de 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .skills__technologies__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Estilos para mobile (tamanho máximo de 480px) */
+@media (max-width: 480px) {
+    .skills__technologies__list {
+        grid-template-columns: 1fr
+    }
+}

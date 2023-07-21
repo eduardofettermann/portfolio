@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
     <title>Portfolio</title>
 </head>
+
 <body>
-    
+    <!-- <header>
+        <nav class="navbar">
+            <h2 class="navbar__logo">ddf.dev</h2>
+            <ul class="navbar__list">
+                <li><a class="navbar__list__item-link" href="">Home</a></li>
+                <li><a class="navbar__list__item-link" href="">Projetos</a></li>
+                <li><a class="navbar__list__item-link" href="">Conhecimentos</a></li>
+                <li><a class="navbar__list__item-link" href="">Sobre mim</a></li>
+            </ul>
+
+            <div class="navbar__hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header> -->
+    <main>
+
+        <section class="apresentation">
+            <img class="apresentation__image" src="./assets/minhafotoboa.jpg"
+                alt="Eduardo Fettermann sentado na arquibancada do Instituto Caldeira, sorrindo, com as mão abaixadas, camisa preta com detalhes verdes e olhos fixados na camera">
+            <div class="apresentation__content">
+                <div class="apresentation__content__titles">
+                    <h1 class="apresentation__content__titles__title">Olá mundo! Eu sou Eduardo Fettermann</h1>
+                    <h2 class="apresentation__content__titles__subtitle">Back-end Developer</h2>
+                </div>
+                <p class="apresentation__content__text">Tenho 17 anos, sou aluno do <a class="nova-geracao-destaque"
+                        href="">Programa Nova Geração</a>, estudo programação há <strong id="contador-de-dias"></strong>
+                    dias, desde então eu me apaixonei por codar, meu objetivo é entrar no mercado
+                    de programação e não entregar apenas códigos com excelência, mas também comunicação e competência.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="projects__title">Projetos.</h2>
+            <ul class="projects__list">
+                <li class="projects__list__item">
+                    <h3 class="projects__list__item-title">Projeto one</h3>
+                    <p>Calculadora de imc feita com aprendizados de manipulação do DOM</p>
+                    <a class="projects__list__item__link" href="">Acessar o projeto</a>
+                </li>
+                <li class="projects__list__item">
+                    <h3 class="projects__list__item-title">Projeto two</h3>
+                    <p>hover vai aparecer print do projeto</p>
+                    <a class="projects__list__item__link" href="">Acessar o projeto</a>
+                </li>
+                <li class="projects__list__item">
+                    <h3 class="projects__list__item-title">Projeto three</h3>
+                    <p>Calculadora de imc feita com aprendizados de manipulação do DOM</p>
+                    <a class="projects__list__item__link" href="">Acessar o projeto</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2 class="skills__title">Hard Skills.</h2>
+            <div>
+                <ul class="skills__technologies__list">
+                    <li class="skills__technologies__list__item">HTML5</li>
+                    <li class="skills__technologies__list__item">CSS3</li>
+                    <li class="skills__technologies__list__item">Sass</li>
+                    <li class="skills__technologies__list__item">JavaScript</li>
+                    <li class="skills__technologies__list__item">Java</li>
+                    <li class="skills__technologies__list__item">Git</li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="aboutme">
+            <h2 class="aboutme__title">Sobre mim.</h2>
+            <p class="aboutme__text">Meu nome é Eduardo Fettermann, tenho 17 anos e estou no último ano do ensino médio. Sou um entusiasta da
+                tecnologia e tenho me dedicado apaixonadamente ao estudo de Front-end. Desde que iniciei meus estudos,
+                tenho buscado constantemente aprimorar minhas habilidades e conhecimentos na área de programação.
+
+                Recentemente, fui selecionado como um dos participantes do projeto Nova Geração, um programa inovador
+                que identifica e desenvolve jovens talentos na área de tecnologia. Estou muito empolgado por fazer parte
+                desse grupo seleto de 5000 pessoas e estou determinado a aproveitar ao máximo essa oportunidade.
+
+                Minha jornada começou com cursos da Alura, que me proporcionaram uma base sólida em Front-end. Desde
+                então, tenho me mantido atualizado e dedicado a aprender cada vez mais sobre as melhores práticas e
+                novas tecnologias do campo.
+
+                Meu objetivo é construir uma carreira como Desenvolvedor Front-end, onde poderei aplicar minhas
+                habilidades e conhecimentos para criar experiências digitais incríveis. Estou entusiasmado com as
+                possibilidades futuras e animado para enfrentar os desafios que a área de tecnologia oferece.
+
+                Estou pronto para me destacar como profissional e estou comprometido em seguir uma trajetória de
+                aprendizado contínuo. Acredito que com dedicação, perseverança e trabalho árduo, alcançarei meu objetivo
+                de me tornar um Desenvolvedor Front-end de sucesso.</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>desenvolvido por Eduardo Fettermann (ddf.dev).</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
