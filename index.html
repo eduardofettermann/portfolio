@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 
@@ -14,14 +12,14 @@
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <nav class="navbar">
-            <h2 class="navbar__logo">ddf.dev</h2>
+            <a class="navbar__logo" href="portfolio-ddfs2.vercel.app">ddf.dev</a>
             <ul class="navbar__list">
-                <li><a class="navbar__list__item-link" href="">Home</a></li>
-                <li><a class="navbar__list__item-link" href="">Projetos</a></li>
-                <li><a class="navbar__list__item-link" href="">Conhecimentos</a></li>
-                <li><a class="navbar__list__item-link" href="">Sobre mim</a></li>
+                <li><a class="navbar__list__item-link" href="#apresentation">Home</a></li>
+                <li><a class="navbar__list__item-link" href="#projects">Projetos</a></li>
+                <li><a class="navbar__list__item-link" href="#skills">Skills</a></li>
+                <li><a class="navbar__list__item-link" href="#aboutme">Sobre mim</a></li>
             </ul>
 
             <div class="navbar__hamburguer">
@@ -30,47 +28,53 @@
                 <span class="bar"></span>
             </div>
         </nav>
-    </header> -->
+    </header>
     <main>
 
-        <section class="apresentation">
+        <section class="apresentation" id="apresentation">
+            <div class="apresentation__content">
+                <div class="apresentation__texts">
+                    <div class="apresentation__texts__titles">
+                        <h2 class="apresentation__texts__titles__title">Back-end Developer</h2>
+                        <h1 class="apresentation_texts__titles__subtitle">Olá mundo! Eu sou Eduardo Fettermann! </h1>
+                    </div>
+                    <p class="apresentation__texts__text">Tenho 17 anos, sou aluno do <a class="nova-geracao-destaque"
+                            href="">Programa Nova Geração</a>, estudo programação há <strong style="width: 130px;" id="contador-de-dias"></strong>
+                        dias, sou apaixonado por codar, acredito que tenho competência para fazer parte do Geração Caldeira e desenvolver-me cada vez mais.
+                    </p>
+                </div>
+                <ul class="apresentation__content__links">
+                    <a class="apresentation__content__links__link hvr-hollow" target="_blank" href="https://www.linkedin.com/in/eduardo-fettermann/">LinkedIn<i class="link-icone fa-brands fa-linkedin"></i></a>
+                    <a class="apresentation__content__links__link hvr-hollow" target="_blank" href="">Currículo <i class="link-icone fa-solid fa-file"></i></a>
+                    <a id="github-link" class="apresentation__content__links__link hvr-hollow" target="_blank" href="https://github.com/ddfs2">GitHub <i class="link-icone fa-brands fa-github"></i></a>
+                </ul>
+            </div>
             <img class="apresentation__image" src="./assets/minhafotoboa.jpg"
                 alt="Eduardo Fettermann sentado na arquibancada do Instituto Caldeira, sorrindo, com as mão abaixadas, camisa preta com detalhes verdes e olhos fixados na camera">
-            <div class="apresentation__content">
-                <div class="apresentation__content__titles">
-                    <h1 class="apresentation__content__titles__title">Olá mundo! Eu sou Eduardo Fettermann</h1>
-                    <h2 class="apresentation__content__titles__subtitle">Back-end Developer</h2>
-                </div>
-                <p class="apresentation__content__text">Tenho 17 anos, sou aluno do <a class="nova-geracao-destaque"
-                        href="">Programa Nova Geração</a>, estudo programação há <strong id="contador-de-dias"></strong>
-                    dias, desde então eu me apaixonei por codar, meu objetivo é entrar no mercado
-                    de programação e não entregar apenas códigos com excelência, mas também comunicação e competência.
-                </p>
-            </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="projects__title">Projetos.</h2>
             <ul class="projects__list">
                 <li class="projects__list__item">
                     <h3 class="projects__list__item-title">Projeto one</h3>
                     <p>Calculadora de imc feita com aprendizados de manipulação do DOM</p>
-                    <a class="projects__list__item__link" href="">Acessar o projeto</a>
+                    <a class="projects__list__item__link" href="https://calculadora-imc-ddfs2.vercel.app/">Acessar o projeto</a>
                 </li>
                 <li class="projects__list__item">
                     <h3 class="projects__list__item-title">Projeto two</h3>
-                    <p>hover vai aparecer print do projeto</p>
+                    <p>Aqui a descrição o projeto e o que foi utilizado</p>
                     <a class="projects__list__item__link" href="">Acessar o projeto</a>
                 </li>
                 <li class="projects__list__item">
                     <h3 class="projects__list__item-title">Projeto three</h3>
-                    <p>Calculadora de imc feita com aprendizados de manipulação do DOM</p>
+                    <p>Aqui a descrição o projeto e o que foi utilizado</p>
                     <a class="projects__list__item__link" href="">Acessar o projeto</a>
                 </li>
             </ul>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="skills__title">Hard Skills.</h2>
             <div>
                 <ul class="skills__technologies__list">
@@ -85,9 +89,10 @@
             </div>
         </section>
 
-        <section class="aboutme">
-            <h2 class="aboutme__title">Sobre mim.</h2>
-            <p class="aboutme__text">Meu nome é Eduardo Fettermann, tenho 17 anos e estou no último ano do ensino médio. Sou um entusiasta da
+        <section class="aboutme" id="aboutme">
+            <div class="aboutme__content">
+                <h2 class="aboutme__content__title">Sobre mim.</h2>
+                <p class="aboutme__content__text">Meu nome é Eduardo Fettermann, tenho 17 anos e estou no último ano do ensino médio. Sou um entusiasta da
                 tecnologia e tenho me dedicado apaixonadamente ao estudo de Front-end. Desde que iniciei meus estudos,
                 tenho buscado constantemente aprimorar minhas habilidades e conhecimentos na área de programação.
 
@@ -106,13 +111,15 @@
                 Estou pronto para me destacar como profissional e estou comprometido em seguir uma trajetória de
                 aprendizado contínuo. Acredito que com dedicação, perseverança e trabalho árduo, alcançarei meu objetivo
                 de me tornar um Desenvolvedor Front-end de sucesso.</p>
+            </div>
         </section>
 
     </main>
     <footer>
-        <p>desenvolvido por Eduardo Fettermann (ddf.dev).</p>
+        <p>desenvolvido por Eduardo Fettermann <a href="https://www.instagram.com/ddf.dev/" class="destaque-rodape">(@ddf.dev)</a>.</p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/b6b1c0f128.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,3 +1,9 @@
-.aboutme__text{
+
+.aboutme{
+    margin: 0;
+    line-height: 140%;
+}
+
+.aboutme__content__text{
     text-align: start;
 }

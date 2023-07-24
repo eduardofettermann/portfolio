@@ -4,6 +4,7 @@
 @import url(./styles/projects.css);
 @import url(./styles/skills.css);
 @import url(./styles/aboutme.css);
+@import url(./styles/hover.css);
 
 :root{
   /* fontes */
@@ -11,43 +12,62 @@
   --font-size-heading-1: 3rem;
   --font-size-heading-2: 1.5rem;
   --font-size-heading-3: 24px;
-  --font-size-paragraph: 24px;
+  --font-size-paragraph: 1.25rem;
 
   --font-weight-heading-1: 600;
   --font-weight-heading-2: 500;
-  --font-weight-paragraph: 400;
-
+  --font-weight-paragraph: 300;
 
   --background-color: #100F0F;
   --font-color: #EEEDED;
+  --hover-color: #ffffff;
+  --hover-font-color: #6528F7;
   --link-color: #16FF00;
 }
 
 
 body {
   background-color: var(--background-color);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--font-color);
   font-size: var(--font-size-paragraph);
-  font-weight: var(--font-weight-paragraph);
+  font-weight: 400;
 }
 
 main{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 25vh;
-  margin: 32vh 0 25vh 0;
+  margin: 14vh 0 25vh 0;
 }
 
-.projects, .skills, .aboutme{
-  margin: 0 20%;
+#projects, #skills, #aboutme{
+  margin: 0 10%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
 }
 
-.apresentation{
-  margin: 0 20%;
+#apresentation{
+  margin: 0 10%;
   gap: 2rem
 }
+
+
+@media (max-width: 1024px) {
+  #projects, #skills, #aboutme{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Estilos para mobile (tamanho máximo de 480px) */
+@media (max-width: 480px) {
+  #projects, #skills, #aboutme{
+    margin: 0 5%;
+    display: flex;
+  }
+} 
