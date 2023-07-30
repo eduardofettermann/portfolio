@@ -16,34 +16,38 @@
 
   --font-weight-heading-1: 600;
   --font-weight-heading-2: 500;
-  --font-weight-paragraph: 300;
+  --font-weight-paragraph: 400;
 
-  --background-color: #100F0F;
-  --font-color: #EEEDED;
-  --hover-color: #ffffff;
+  --background-color: #1a1a1a;
+  --font-color: #cacaca;
+  --hover-color: #222222;
   --hover-font-color: #6528F7;
-  --link-color: #16FF00;
+  --link-color: #12d600;
+  --header-footer-color:#1f1f1f;
+  --project-soon: #8a8a8a;
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--background-color);
   font-family: 'Montserrat', sans-serif;
   color: var(--font-color);
   font-size: var(--font-size-paragraph);
   font-weight: 400;
+
 }
 
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25vh;
-  margin: 14vh 0 25vh 0;
+  margin: 14vh 0 0 0;
 }
 
 #projects, #skills, #aboutme{
-  margin: 0 10%;
+  margin: 5vh 10% 0 10%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -53,6 +57,10 @@ main{
 #apresentation{
   margin: 0 10%;
   gap: 2rem
+}
+
+#aboutme{
+  margin-bottom: 10vh;
 }
 
 

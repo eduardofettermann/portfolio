@@ -53,7 +53,6 @@
 
 .apresentation__content__links {
     display: flex;
-    
     font-size: 1.25rem;
     gap: 1rem;
     flex-wrap: wrap;
@@ -61,7 +60,7 @@
 
 
 .apresentation__image {
-    width: 50%;
+    width: 40%;
     border-radius: 0.5rem;
 }
 

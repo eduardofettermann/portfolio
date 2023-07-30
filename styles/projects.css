@@ -1,6 +1,8 @@
 .projects{
+    height: 60vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: var(--background-color);
     text-align: center;
     gap: 2rem;
@@ -26,6 +28,11 @@
     text-decoration: none;
 }
 
+
+.soon{
+    color: var(--project-soon);
+    border: var(--hover-color) solid 1px;
+}
 /* Estilos para tablet (tamanho máximo de 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     .projects__list {

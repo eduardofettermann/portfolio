@@ -1,26 +1,27 @@
 /* NavBar Links*/
 
-.navbar__logo{
+.navbar__logo {
     z-index: 1;
     grid-column-start: 1;
     grid-column-end: 2;
     font-weight: 700;
     color: var(--font-color);
     text-decoration: none;
-    margin-right: 4rem ;
+    margin-right: 4rem;
 }
 
-.navbar__logo:hover{
+.navbar__logo:hover {
     color: var(--hover-font-color);
     text-decoration: underline var(--hover-font-color);
 }
 
-.navbar__list__item-link{
+.navbar__list__item-link {
     font-weight: 300;
     color: var(--font-color);
     text-decoration: none;
 }
-.navbar__list__item-link:hover{
+
+.navbar__list__item-link:hover {
     color: var(--hover-font-color);
     text-decoration: underline var(--hover-font-color);
 }
@@ -60,39 +61,61 @@
     border-color: var(--hover-font-color);
 }
 
-.apresentation__content__links__link:hover .link-icone{
+.apresentation__content__links__link:hover .link-icone {
     color: var(--hover-font-color);
 }
 
-.link-icone{
+.link-icone {
     color: var(--link-color);
 }
 
 /* Links Projetos */
 
-.projects__list__item:hover .projects__list__item__link{
+.projects__list__item:hover .projects__list__item__link {
     color: var(--hover-font-color);
     text-decoration: underline var(--hover-font-color);
 }
 
-.projects__list__item:hover{
+.projects__list__item:hover {
     background-color: var(--hover-color);
-    color: var(--background-color);
+}
+
+.soon:hover {
+    background-color: initial;
+}
+
+/* Skills */
+
+.hover-glow {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 0.2rem var(--hover-font-color);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+
+.hover-glow:hover,
+.hover-glow:focus,
+.hover-glow:active {
+    box-shadow: 0 0 0.5rem var(--font-color);
 }
 
 /* Rodapé */
-.destaque-rodape{
+.destaque-rodape {
     color: var(--hover-font-color);
     text-decoration: none;
 }
 
 
-@media(max-width: 1024px){
-    .navbar__logo{
+@media(max-width: 1024px) {
+    .navbar__logo {
         margin-right: 0;
     }
 
-    .navbar__list__item-link{
+    .navbar__list__item-link {
         font-size: 2rem;
     }
 }
