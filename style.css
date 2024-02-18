@@ -1,29 +1,17 @@
-@import url(./styles/apresentation.css);
-@import url(./styles/footer.css);
-@import url(./styles/projects.css);
-@import url(./styles/skills.css);
-@import url(./styles/aboutme.css);
-@import url(./styles/hover.css);
-
 :root {
-  /* fontes */
-  --font-family: 'Montserrat', sans-serif;
-  --font-size-heading-1: 3rem;
+  --font-family: 'Inter', sans-serif;
+  --font-size-heading-1: 2rem;
   --font-size-heading-2: 1.5rem;
-  --font-size-heading-3: 1.5rem;
   --font-size-paragraph: 1rem;
 
   --font-weight-heading-1: 600;
   --font-weight-heading-2: 500;
   --font-weight-paragraph: 400;
 
-  --background-color: #1a1a1a;
+  --background-color: #0e0e0e;
   --font-color: #cacaca;
   --hover-color: #222222;
-  --hover-font-color: #6528F7;
   --link-color: #12d600;
-  --header-footer-color: #1f1f1f;
-  --project-soon: #8a8a8a;
 }
 
 html {
@@ -41,25 +29,18 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 14vh 0 0 0;
+  align-items: fle;
+  margin: 5rem 0 5rem 2rem;
 }
 
-@media (max-width: 1024px) {
-  #projects,
-  #skills,
-  #aboutme {
-    margin: 0 10%;
-    display: flex;
-    flex-direction: column;
-  }
+.title {
+  font-size: var(--font-size-heading-1);
 }
 
-@media (max-width: 480px) {
-  #projects,
-  #skills,
-  #aboutme {
-    margin: 0 5%;
-    display: flex;
-  }
+.subtitle {
+  font-size: var(--font-size-heading-2);
+}
+
+.text {
+  font-size: var(--font-size-paragraph);
 }
