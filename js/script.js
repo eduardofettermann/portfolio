@@ -1,9 +1,11 @@
 const contadorHtml = document.getElementById("contador-de-dias");
+const minhaIdadeHtml = document.getElementById("minha-idade");
 
 const segundo = 1000;
 const minuto = segundo * 60;
 const hora = minuto * 60;
 const dia = hora * 24;
+const anoEmMilisegundos = (dia * 365) + (6 * hora);
 
 function contarDiasDesdeInicioEstudos() {
     let inicioDosEstudos = new Date('2023-03-13T14:00:00.000Z');
@@ -15,34 +17,18 @@ function contarDiasDesdeInicioEstudos() {
 
     contadorHtml.innerHTML = resultado;
     contadorHtml.innerHTML += " dias";
-
-    document.addEventListener("DOMContentLoaded", function () {
-        function updateCounter() {
-            let count = 0;
-
-            function incrementCount() {
-                count++;
-                contadorHtml.textContent = count;
-                if (count >= resultado) {
-                    //limite do counter
-                    clearInterval(counterInterval);
-                }
-            }
-            const counterInterval = setInterval(incrementCount, 30); //velocidade do contador
-        }
-
-        updateCounter();
-    });
 }
-contarDiasDesdeInicioEstudos()
 
+function atualizarMinhaIdade() {
+    let dataDoMeuNascimento = new Date('2005-12-02T08:00:00.000Z');
+    let dataDeHoje = new Date();
 
-// Menu hamburguer
-const hamburguer = document.querySelector(".navbar__hamburguer");
-const navMenu = document.querySelector(".navbar__list");
+    let diferencaDeMilisegundos = dataDeHoje.getTime() - dataDoMeuNascimento.getTime();
 
-hamburguer.addEventListener("click", () => {
-    hamburguer.classList.toggle('active');
-    navMenu.classList.toggle('active');
-    console.log("funcionou");
-})
+    const resultado = Math.floor(diferencaDeMilisegundos / anoEmMilisegundos);
+
+    minhaIdadeHtml.innerHTML = resultado;
+}
+atualizarMinhaIdade();
+contarDiasDesdeInicioEstudos();
+

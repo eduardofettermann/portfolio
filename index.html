@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 
@@ -15,45 +15,42 @@
     <main>
         <section class="apresentation" id="apresentation">
             <h1 class="apresentation_texts__titles__title title">Olá mundo! Eu sou Eduardo Fettermann!</h1>
-            <p class="apresentation__texts__text text">Tenho 17 anos, sou aluno do <a target="_blank" class="nova-geracao-destaque"
-                            href="https://institutocaldeira.org.br/programas/nova-geracao/">Programa Nova Geração</a>, estudo programação há <strong id="contador-de-dias"></strong>
-                        dias, sou apaixonado por programar e acredito que tenho competência para fazer parte do Geração Caldeira, conseguindo me desenvolver cada vez mais como pessoa e profissional.
-             </p>
-            <ul class="apresentation__content__links">
-                <a class="apresentation__content__links__link" target="_blank" href="https://www.linkedin.com/in/eduardo-fettermann/">LinkedIn</a>
-                <a class="apresentation__content__links__link" target="_blank" href="./assets/curriculo-geracao-caldeira.pdf">Currículo</a>
-                <a class="apresentation__content__links__link" target="_blank" href="https://github.com/ddfs2">GitHub</a>
-             </ul>
+            <p class="apresentation__text text">
+            Tenho <strong id="minha-idade"></strong> anos, iniciei o curso Superior em Análise e Desenvolvimento de Sistemas esse ano, mas estudo programação há <strong id="contador-de-dias"></strong>(13/03/2023).
+            Já estudei Frontend, Cloud Computing e estou me aprofundando no Backend enquanto busco minha primeira vaga na área.
+            <br><strong class="apresentation__text-observacao">obs: gosto muito de Java :)</strong>
+        </p>
         </section>
 
-        
+        <section class="links">
+            <h2 class="links-title subtitle">Links</h2>
+            <p class="links__texto"><a class="links__link link" target="_blank" href="https://www.linkedin.com/in/eduardo-fettermann/">LinkedIn</a> para se conectar comigo</p>
+            <p class="links__texto"><a class="links__link link" target="_blank" href="./assets/curriculo.pdf">Meu currículo</a> caso tenha interesse em me contratar</p>
+            <p class="links__texto"><a class="links__link link" target="_blank" href="https://github.com/ddfs2">GitHub</a> para ver meus projetos</p>
+        </section>
+
+
 
         <section class="skills" id="skills">
-            <h2 class="skills__title subtitle">Hard Skills</h2>
+            <h2 class="skills__title subtitle">Skills</h2>
             <div>
-                <ul class="skills__technologies__list">
-                    <li class="skills__technologies__list__item">HTML</li>
-                    <li class="skills__technologies__list__item">CSS</li>
-                    <li class="skills__technologies__list__item">Sass</li>
-                    <li class="skills__technologies__list__item">JavaScript</li>
-                    <li class="skills__technologies__list__item">Java</li>
-                    <li class="skills__technologies__list__item">Git</li>
-
+                <ul class="skills">
+                    <li class="skills__item">Java</li>
+                    <li class="skills__item">Git</li>
+                    <li class="skills__item">SQL</li>
+                    <li class="skills__item">AWS</li>
+                    <li class="skills__item">Spring(Boot, Data, WebFlux, Cloud e Security)</li>
+                    <li class="skills__item">Metodologias Ágeis(Scrum e Agile)</li>
+                    <li class="skills__item">JavaScript</li>
+                    <li class="skills__item">CSS</li>
+                    <li class="skills__item">HTML</li>
                 </ul>
             </div>
         </section>
 
-        <section class="aboutme" id="aboutme">
-            <div class="aboutme__content">
-                <h2 class="aboutme__content__title">Sobre mim.</h2>
-                <p class="aboutme__content__text text">Meu nome é Eduardo Fettermann, tenho 17 anos e estou no último ano do ensino médio.
-
-                Desde que comecei estudar por cursos da Alura venho me apaixonando cada vez mais pela programação,
-                tenho me dedicado a aumentar cada vez mais meu nível de conhecimento em Java,JavaScript, HTML e CSS.
-
-                Meu objetivo é entrar no mercado de trabalho como Desenvolvedor Web, onde aplicarei minhas habilidades. Estou disposto a me dedicar para alcançar minhas metas e objetivos, aproveitando todas oportunidades o máximo possível que aparecerem no caminho.
-                </p>
-            </div>
+        <section class="sobre-mim" id="aboutme">
+                <h2 class="sobre-mim__title subtitle">Sobre mim</h2>
+                <p class="sobre-mim__text text">Atualizar</p>
         </section>
     </main>
     <script src="js/script.js"></script>
