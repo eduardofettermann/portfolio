@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --font-family: 'Nunito Sans', sans-serif;
     --font-size-heading-1: 2.5rem;
@@ -73,3 +74,80 @@ main {
   margin: 0.25rem 0 0.25rem 1rem;
 }
 
+=======
+:root {
+    --font-family: 'Nunito Sans', sans-serif;
+    --font-size-heading-1: 2.5rem;
+    --font-size-heading-2: 1.95rem;
+    --font-size-paragraph: 1.15rem;
+  
+    --font-weight-heading-1: 700;
+    --font-weight-heading-2: 600;
+    --font-weight-paragraph: 400;
+  
+    --background-color: #140d17;
+    --font-color: #f0f0f0;
+    --link-color:   #1040b6;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-paragraph);
+  }
+  
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20vh;
+  }
+  
+.title {
+    font-size: var(--font-size-heading-1);
+    margin: 0 0 1.5rem 0;
+  }
+  
+.subtitle {
+    font-size: var(--font-size-heading-2);
+    margin: 1.5rem 0 1rem 0;
+  }
+  
+.text {
+    font-size: var(--font-size-paragraph);
+    margin: 1rem 0 1rem 0;
+  }
+
+.apresentation__text-observacao {
+  font-weight: 300;
+  color: #c9c8c8;
+}
+  
+.links__texto {
+  margin: 1rem 0;
+}
+
+.links__link {
+    color: var(--link-color);
+    text-decoration:none;
+  }
+
+.links__link:hover {
+  text-decoration: underline;
+}
+
+.skills {
+  list-style-type: disc;
+}
+
+.skills__item {
+  margin: 0.25rem 0 0.25rem 1rem;
+}
+
+>>>>>>> origin
