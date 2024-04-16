@@ -10,7 +10,7 @@
   
     --background-color: #140d17;
     --font-color: #f0f0f0;
-    --link-color:   #1040b6;
+    --link-color:   #9e00fa;
   }
   
   html {
@@ -59,7 +59,7 @@ main {
 
 .links__link {
     color: var(--link-color);
-    text-decoration:none;
+    text-decoration: underline;
   }
 
 .links__link:hover {
